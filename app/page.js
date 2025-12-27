@@ -23,9 +23,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
       <HowItWorksSection />
+      <ServicesSection />
+      <AboutSection />
       <TestimonialsSection />
       <StatsSection />
       <CTASection />

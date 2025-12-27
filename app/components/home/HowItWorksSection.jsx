@@ -5,83 +5,82 @@ export default function HowItWorksSection() {
   const steps = [
     {
       id: 1,
-      title: "Choose Service",
+      title: "Pick a Service",
       description:
-        "Select the care service that best fits your family's needs.",
-      icon: "🔍",
-      color: "bg-indigo-600",
+        "Choose the care service that suits your family's needs quickly and easily.",
+      icon: "🍼",
+      color: "bg-indigo-500",
     },
     {
       id: 2,
-      title: "Set Details",
-      description: "Specify your schedule, duration, and special requirements.",
-      icon: "📋",
+      title: "Provide Details",
+      description:
+        "Tell us your schedule, special requirements, and preferences.",
+      icon: "📆",
       color: "bg-pink-500",
     },
     {
       id: 3,
-      title: "Meet & Pay",
-      description: "Connect with your matched caregiver and confirm booking.",
+      title: "Confirm & Pay",
+      description:
+        "Secure your booking and complete payment in a few clicks.",
       icon: "💳",
-      color: "bg-purple-600",
+      color: "bg-purple-500",
     },
     {
       id: 4,
-      title: "Enjoy Peace",
-      description: "Relax knowing your loved ones are in professional hands.",
-      icon: "✨",
+      title: "Relax",
+      description:
+        "Enjoy peace of mind knowing your loved ones are cared for professionally.",
+      icon: "🌟",
       color: "bg-green-500",
     },
   ];
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16 max-w-3xl mx-auto"
+          transition={{ duration: 0.7 }}
+          className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            How It <span className="text-indigo-600">Works</span>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+            How We <span className="text-indigo-600">Help You</span>
           </h2>
-          <p className="text-lg text-gray-600">
-            Get started with our simple 4-step process
+          <p className="text-gray-600 text-lg">
+            A simple, transparent process to get professional care fast
           </p>
         </motion.div>
 
-        {/* Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        {/* Steps Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <motion.div
               key={step.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="text-center group"
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="bg-gray-50 rounded-3xl p-8 text-center shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Step Number */}
+              {/* Icon Circle */}
               <div
-                className={`relative inline-flex items-center justify-center w-16 h-16 rounded-full ${step.color} text-white text-2xl font-bold mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-white text-2xl font-bold ${step.color} shadow-lg`}
               >
-                {step.id}
-                <div className="absolute inset-0 rounded-full bg-white opacity-20 animate-ping" />
-              </div>
-
-              {/* Icon */}
-              <div className="text-4xl mb-4 transform group-hover:-translate-y-2 transition-transform duration-300">
                 {step.icon}
               </div>
 
-              {/* Content */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {step.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {step.description}
               </p>
             </motion.div>

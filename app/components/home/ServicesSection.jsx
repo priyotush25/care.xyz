@@ -7,16 +7,16 @@ import { motion } from "framer-motion";
 
 const serviceImages = {
   "baby-care":
-    "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80",
+    "https://i.ibb.co.com/7thFyjnp/baby-care.jpg",
   "elderly-care":
-    "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=800&q=80",
+    "https://i.ibb.co.com/G4YhpGm0/care-2.jpg",
   "sick-care":
-    "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
+    "https://i.ibb.co.com/Y7HxQ6SN/sick-at-home.jpg",
 };
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-white py-16 lg:py-24">
+    <section id="services" className="bg-gray-50 py-16 lg:py-24">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -43,11 +43,11 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8 }}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300 group"
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300 group"
             >
               {/* Image */}
-              <div className="relative h-60 overflow-hidden">
+              <div className="relative h-60 overflow-hidden rounded-t-3xl">
                 <img
                   src={
                     serviceImages[service.category] ||
@@ -55,23 +55,23 @@ export default function ServicesSection() {
                     "https://images.unsplash.com/photo-1631815588090-d4bfec5b1cca?auto=format&fit=crop&w=800&q=80"
                   }
                   alt={service.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/80 to-transparent"></div>
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent rounded-t-3xl"></div>
               </div>
 
               {/* Content */}
               <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
                     {service.name}
                   </h3>
-                  <div className="badge badge-outline text-xs font-semibold text-gray-500">
+                  <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">
                     {service.category.replace("-", " ")}
                   </div>
                 </div>
 
-                <p className="text-gray-600 mb-6 line-clamp-2 text-sm leading-relaxed">
+                <p className="text-gray-600 mb-6 text-sm line-clamp-2">
                   {service.description}
                 </p>
 
@@ -85,7 +85,7 @@ export default function ServicesSection() {
                       />
                     ))}
                   </div>
-                  <span className="text-sm font-medium text-gray-500">
+                  <span className="text-sm text-gray-500">
                     ({service.reviewsCount}+ reviews)
                   </span>
                 </div>
@@ -107,9 +107,9 @@ export default function ServicesSection() {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="btn bg-indigo-600 hover:bg-indigo-700 text-white border-none rounded-xl px-6"
+                      className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold shadow-md transition"
                     >
-                      Book <FiArrowRight className="ml-1" />
+                      Book <FiArrowRight className="inline ml-1" />
                     </motion.button>
                   </Link>
                 </div>
