@@ -4,19 +4,8 @@ A comprehensive web application providing reliable and trusted care services for
 
 ## 🔗 Live Demo
 
-[https://care-first-ten.vercel.app/](https://care-first-ten.vercel.app/)
+[https://care-hrz0cg89p-priyotushs-projects.vercel.app/]
 
-## 🔑 Admin Credentials
-
-(For testing purposes)
-
-| Role      | Email             | Password           |
-| --------- | ----------------- | ------------------ |
-| **Admin** | `admin@gmail.com` | `admin@gmail.comA` |
-
-| Role     | Email                   | Password                 |
-| -------- | ----------------------- | ------------------------ |
-| **User** | `shamim.ct17@gmail.com` | `shamim.ct17@gmail.comA` |
 
 ## 🚀 Core Features
 
@@ -54,14 +43,9 @@ A comprehensive web application providing reliable and trusted care services for
 
   - Fully responsive across mobile, tablet, and desktop
 
-- **Modern UI/UX**
-  - Premium design with gradients, animations, and glassmorphism effects
 
-### ✅ Completed Features
 
-- [x] Email invoice sending (Nodemailer integration)
-- [x] Admin dashboard
-- [x] Service reviews and ratings
+
 
 ### Technical Features
 
@@ -145,37 +129,6 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 3. Whitelist your IP address (or use 0.0.0.0/0 for development)
 4. Copy connection string to `.env.local`
 
-## 📁 Project Structure
-
-```
-care-first/
-├── app/
-│   ├── api/                    # API routes
-│   │   ├── bookings/          # Booking endpoints
-│   │   ├── services/          # Service endpoints
-│   │   └── users/             # User endpoints
-│   ├── booking/               # Booking pages
-│   ├── components/            # Reusable components
-│   │   ├── auth/             # Auth components
-│   │   ├── booking/          # Booking components
-│   │   ├── home/             # Homepage sections
-│   │   ├── layout/           # Layout components
-│   │   └── ui/               # UI primitives
-│   ├── contexts/              # React contexts
-│   ├── login/                 # Login page
-│   ├── my-bookings/           # User bookings page
-│   ├── register/              # Registration page
-│   ├── services/              # Service pages
-│   ├── error.jsx              # Error boundary
-│   ├── layout.js              # Root layout
-│   ├── not-found.jsx          # 404 page
-│   └── page.js                # Homepage
-├── lib/
-│   ├── data/                  # Sample data
-│   ├── firebase/              # Firebase config
-│   └── mongodb/               # MongoDB config & models
-└── public/                    # Static assets
-```
 
 ## 🎨 Design System
 
