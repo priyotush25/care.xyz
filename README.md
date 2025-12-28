@@ -4,7 +4,7 @@ A comprehensive web application providing reliable and trusted care services for
 
 ## 🔗 Live Demo
 
-[https://care-hrz0cg89p-priyotushs-projects.vercel.app/]
+[[https://care-hrz0cg89p-priyotushs-projects.vercel.app/](https://care-xyz-ebon.vercel.app/)]
 
 
 ## 🚀 Core Features
